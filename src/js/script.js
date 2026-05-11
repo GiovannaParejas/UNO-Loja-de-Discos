@@ -36,8 +36,8 @@ const intervalo = setInterval(() => {
             setTimeout(() => {
                 inicio.style.display = 'none';
                 header.classList.add('visivel'); 
-            }, 1000);
-        }, 400);
+            }, 200);
+        }, 200);
 
         return;
     }
