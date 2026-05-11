@@ -414,8 +414,17 @@
     }
 
     #stats {
-        gap: 1.25rem;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .stat-num {
+        font-size: 1.4rem;
+    }
+
+    .stat-label {
+        font-size: .65rem;
     }
 
     #equipe-grid {
