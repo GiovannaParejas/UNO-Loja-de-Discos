@@ -1,0 +1,217 @@
+/* Início: Hero Contato */
+#contato-hero {
+    background: var(--cor-preta);
+    padding: 60px 80px 40px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+#contato-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contato-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    color: var(--cor-branca);
+    letter-spacing: .04em;
+    margin-bottom: .5rem;
+}
+
+#contato-sub {
+    font-family: var(--fonte-corpo);
+    font-size: 1rem;
+    color: var(--cor-branca-70);
+}
+/* Fim: Hero Contato */
+
+/* Início: Contato Section */
+#contato-section {
+    background: var(--cor-preta);
+    padding: 40px 80px 80px;
+}
+
+#contato-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.contato-card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contato-card-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+    color: var(--cor-branca);
+    letter-spacing: .06em;
+}
+
+/* Formulário */
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+.form-label {
+    font-family: var(--fonte-corpo);
+    font-size: .82rem;
+    color: var(--cor-branca-70);
+}
+
+.form-input {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: .75rem 1rem;
+    color: var(--cor-branca);
+    font-family: var(--fonte-corpo);
+    font-size: .9rem;
+    outline: none;
+    width: 100%;
+    transition: border-color .2s;
+}
+
+.form-input:focus {
+    border-color: var(--cor-vermelha);
+}
+
+.form-input::placeholder {
+    color: #444;
+}
+
+.form-textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-erro {
+    font-size: .72rem;
+    color: var(--cor-vermelha);
+    min-height: .9rem;
+    display: block;
+}
+
+#form-success {
+    background: #0a2a1a;
+    border: 1px solid #1a5a2a;
+    color: #52c48c;
+    padding: .75rem 1rem;
+    border-radius: 8px;
+    font-size: .88rem;
+    font-family: var(--fonte-corpo);
+    display: none;
+}
+
+#btn-enviar {
+    background: var(--cor-vermelha);
+    color: var(--cor-branca);
+    font-family: var(--fonte-corpo);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .9rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity .2s;
+    margin-top: .5rem;
+}
+
+#btn-enviar:hover {
+    opacity: .85;
+}
+
+/* Informações */
+#contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: .9rem;
+}
+
+.info-icone {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--cor-vermelha);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    flex-shrink: 0;
+}
+
+.info-item strong {
+    display: block;
+    font-family: var(--fonte-corpo);
+    font-size: .88rem;
+    color: var(--cor-branca);
+    margin-bottom: .15rem;
+}
+
+.info-item p {
+    font-family: var(--fonte-corpo);
+    font-size: .82rem;
+    color: var(--cor-branca-70);
+    line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    #contato-hero,
+    #contato-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contato-hero,
+    #contato-section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    #contato-titulo { font-size: 2.2rem; }
+
+    #contato-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #contato-hero,
+    #contato-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #contato-titulo { font-size: 1.8rem; }
+
+    .contato-card { padding: 1.5rem; }
+}
+/* Fim: Contato Section */

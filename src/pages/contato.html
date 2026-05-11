@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Contato — UNO</title>
+</head>
+<body>
+
+    <!-- Início: Menu -->
+    <header>
+        <a href="../index.html"><img id="img-menu" src="../assets/logo UNO.png" alt="Logo UNO"></a>
+        <nav id="link-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <a id="botao-menu" href="portfolio.html">Portfólio</a>
+        <button id="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <!-- Fim: Menu -->
+
+    <main>
+
+        <!-- Início: Hero Contato -->
+        <section id="contato-hero">
+            <div id="contato-hero-container">
+                <h1 id="contato-titulo">Fale Conosco</h1>
+                <p id="contato-sub">Dúvidas, sugestões ou quer saber mais sobre algum título? Estamos aqui.</p>
+            </div>
+        </section>
+        <!-- Fim: Hero Contato -->
+
+        <!-- Início: Contato Grid -->
+        <section id="contato-section">
+            <div id="contato-container">
+
+                <!-- Formulário -->
+                <div class="contato-card" id="form-card">
+                    <h2 class="contato-card-titulo">Envie sua mensagem</h2>
+
+                    <div id="form-success">
+                        ✅ Mensagem enviada com sucesso! Em breve entraremos em contato.
+                    </div>
+
+                    <div class="form-grupo">
+                        <label class="form-label">Nome completo</label>
+                        <input type="text" id="form-nome" class="form-input" placeholder="Seu nome">
+                        <span class="form-erro" id="erro-nome"></span>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label class="form-label">E-mail</label>
+                        <input type="email" id="form-email" class="form-input" placeholder="seu@email.com">
+                        <span class="form-erro" id="erro-email"></span>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label class="form-label">Assunto</label>
+                        <input type="text" id="form-assunto" class="form-input" placeholder="Ex.: Dúvida sobre o produto">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label class="form-label">Mensagem</label>
+                        <textarea id="form-mensagem" class="form-input form-textarea" placeholder="Escreva sua mensagem aqui"></textarea>
+                        <span class="form-erro" id="erro-mensagem"></span>
+                    </div>
+
+                    <button id="btn-enviar" onclick="enviarFormulario()">Enviar mensagem</button>
+                </div>
+
+                <!-- Informações -->
+                <div id="contato-info">
+
+                    <div class="contato-card">
+                        <h2 class="contato-card-titulo">Informações de contato</h2>
+                        <ul class="info-lista">
+                            <li class="info-item">
+                                <div class="info-icone">📞</div>
+                                <div>
+                                    <strong>Telefone</strong>
+                                    <p>(11) 9 9999-8888</p>
+                                </div>
+                            </li>
+                            <li class="info-item">
+                                <div class="info-icone">✉️</div>
+                                <div>
+                                    <strong>E-mail</strong>
+                                    <p>contato@uno.com.br</p>
+                                </div>
+                            </li>
+                            <li class="info-item">
+                                <div class="info-icone">📍</div>
+                                <div>
+                                    <strong>Endereço</strong>
+                                    <p>Rua do Vinil, 42 — Vila Madalena, SP</p>
+                                </div>
+                            </li>
+                            <li class="info-item">
+                                <div class="info-icone">🕐</div>
+                                <div>
+                                    <strong>Horário de funcionamento</strong>
+                                    <p>Seg–Sex: 10h às 20h<br>Sáb: 10h às 18h<br>Dom: Fechado</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contato-card">
+                        <h2 class="contato-card-titulo">Redes Sociais</h2>
+                        <ul class="info-lista">
+                            <li class="info-item">
+                                <div class="info-icone">📸</div>
+                                <div>
+                                    <strong>Instagram</strong>
+                                    <p>@UNO_discos</p>
+                                </div>
+                            </li>
+                            <li class="info-item">
+                                <div class="info-icone">📘</div>
+                                <div>
+                                    <strong>Facebook</strong>
+                                    <p>UNO_discos</p>
+                                </div>
+                            </li>
+                            <li class="info-item">
+                                <div class="info-icone">▶️</div>
+                                <div>
+                                    <strong>YouTube</strong>
+                                    <p>UNO Discos</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Fim: Contato Grid -->
+
+    </main>
+
+    <!-- Início: Footer -->
+    <footer id="footer">
+        <div id="footer-container">
+            <div class="footer-col" id="footer-marca">
+                <a href="../index.html">
+                    <img id="footer-logo" src="../assets/logo UNO.png" alt="Logo UNO">
+                </a>
+                <p id="footer-desc">A melhor loja de CDs e discos<br>do Brasil, desde 1995.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-titulo">Links Rápidos</h4>
+                <ul class="footer-lista">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-titulo">Contato</h4>
+                <ul class="footer-lista footer-contato">
+                    <li>(11) 9 9999-8888</li>
+                    <li>contato@UNO.com.br</li>
+                    <li>Rua do Vinil, 42 — SP</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-titulo">Redes Sociais</h4>
+                <div id="footer-social">
+                    <a href="#" class="social-btn">Instagram</a>
+                    <a href="#" class="social-btn">Facebook</a>
+                    <a href="portfolio.html" class="social-btn">Portfólio</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <p>© 2024 UNO. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- Fim: Footer -->
+
+    <script src="../js/contato.js"></script>
+</body>
+</html>
