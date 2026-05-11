@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portfólio | UNO</title>
+</head>
+<body>
+
+    <!-- Início: Menu -->
+    <header>
+        <a href="/index.html"><img id="img-menu" src="../assets/logo UNO.png" alt="Logo UNO"></a>
+        <nav id="link-menu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <a id="botao-menu" href="portfolio.html">Portfólio</a>
+        <button id="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <!-- Fim: Menu -->
+
+    <main>
+
+        <!-- Início: Hero portfolio -->
+        <section id="portfolio-hero">
+            <div id="portfolio-hero-container">
+                <h1 id="portfolio-titulo">Catálogo Completo</h1>
+                <p id="portfolio-sub">Explore nossa coleção de CDs, vinis e raridades.</p>
+            </div>
+        </section>
+        <!-- Fim: Hero portfolio -->
+
+        <!-- Início: Filtros -->
+        <section id="portfolio-filtros">
+            <div id="filtros-container">
+
+                <div id="filtros-esquerda">
+                    <button class="filtro-tipo ativo" data-tipo="todos">Todos</button>
+                    <button class="filtro-tipo" data-tipo="vinil">Vinil</button>
+                    <button class="filtro-tipo" data-tipo="cd">CD</button>
+                </div>
+
+                <div id="filtros-direita">
+                    <select id="filtro-genero">
+                        <option value="todos">Gênero</option>
+                        <option value="rock">Rock</option>
+                        <option value="pop">Pop</option>
+                        <option value="mpb">MPB</option>
+                        <option value="classico">Clássico</option>
+                        <option value="eletronico">Eletrônico</option>
+                    </select>
+                    <select id="filtro-preco">
+                        <option value="todos">Filtro</option>
+                        <option value="promocao">Promoção</option>
+                        <option value="raridade">Raridade</option>
+                        <option value="lancamento">Lançamento</option>
+                        <option value="importado">Importado</option>
+                    </select>
+                </div>
+
+            </div>
+        </section>
+        <!-- Fim: Filtros -->
+
+        <!-- Início: Grid produtos -->
+        <section id="portfolio-grid-section">
+            <div id="portfolio-grid" class="produtos-grid">
+                <!-- cards gerados pelo JS -->
+            </div>
+        </section>
+        <!-- Fim: Grid produtos -->
+
+    </main>
+
+    <!-- Início: Footer -->
+    <footer id="footer">
+        <div id="footer-container">
+
+            <div class="footer-col" id="footer-marca">
+                <a href="./index.html">
+                    <img id="footer-logo" src="/src/assets/logo UNO.png" alt="Logo UNO">
+                </a>
+                <p id="footer-desc">A melhor loja de CDs e discos<br>do Brasil, desde 1995.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-titulo">Links Rápidos</h4>
+                <ul class="footer-lista">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./src/pages/portfolio.html">Portfólio</a></li>
+                    <li><a href="./src/pages/sobre.html">Sobre</a></li>
+                    <li><a href="./src/pages/contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-titulo">Contato</h4>
+                <ul class="footer-lista footer-contato">
+                    <li>(11) 9 9999-8888</li>
+                    <li>contato@uno.com.br</li>
+                    <li>Rua do Vinil, 42 — SP</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-titulo">Redes Sociais</h4>
+                <div id="footer-social">
+                    <a href="#" class="social-btn">Instagram</a>
+                    <a href="#" class="social-btn">Facebook</a>
+                    <a href="./src/pages/portfolio.html" class="social-btn">Portfólio</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer-bottom">
+            <p>© 2024 UNO. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- Fim: Footer -->
+
+    <script src="../js/portifolio.js"></script>
+</body>
+</html>
