@@ -56,7 +56,7 @@ Site institucional da **UNO**, uma loja especializada em CDs, discos de vinil, r
 
 ---
 
-## 👥 Equipe
+## 👥 Equipe UNO
 
 | Nome |
 |---|
